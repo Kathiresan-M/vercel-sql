@@ -13,7 +13,7 @@ app.use(cors());
 
 // For specific origins
 app.use(cors({
-    origin: 'https://sqlcodebreaker.netlify.app/',
+    origin: 'https://sqlcodebreaker.netlify.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
