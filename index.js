@@ -10,12 +10,6 @@ const usersModel = require('./models/usersModel')
 const app = express();
 app.use(express.json());
 app.use(cors());
-
-// For specific origins
-app.use(cors({
-    origin: 'https://sqlcodebreaker.netlify.app'
-}));
-
 // app.use(bodyParser.json());
 const PORT = process.env.PORT || 5000;
 const dbUrl = "mongodb+srv://kathiresan:kathiresan@cluster1.axyukqe.mongodb.net/";
