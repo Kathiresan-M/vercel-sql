@@ -252,7 +252,7 @@ app.post('/update-topic',async (req, res) => {
 
 //Execute Query api
 app.get("/execute-query", (req, res) => {
-    const db = new sqlite3.Database('./test.db', sqlite3.OPEN_READWRITE, (err) => {
+    const db = new sqlite3.Database('./test.db', sqlite3.OPEN_READONLY, (err) => {
         if (err) {
             console.error(err.message);
         }
